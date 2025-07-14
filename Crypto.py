@@ -38,19 +38,6 @@ def get_bybit_ohlcv(tf='D', limit=50):
 
     bybit = ccxt.bybit()
     #bybit = ccxt.bybit({'enableRateLimit': True, 'rateLimit': 500})
-    bybit = ccxt.bybit({
-        'enableRateLimit': True,
-        'rateLimit': 500,
-        'proxies': {
-            'http://103.169.142.7:80',
-            'http://103.169.142.228:80',
-            'http://103.169.142.50:80',
-            'http://103.169.142.178:80',
-            'http://103.169.142.226:80',
-            'http://103.169.142.111:80',
-            'http://4.195.16.140:80'
-        }
-    })
     markets = pd.Series(bybit.load_markets())
 
     tickers = []
