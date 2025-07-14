@@ -48,7 +48,7 @@ def get_bybit_ohlcv(tf='D', limit=50):
             'http://103.169.142.178:80',
             'http://103.169.142.226:80',
             'http://103.169.142.111:80',
-            'http://4.195.16.140:80
+            'http://4.195.16.140:80'
         }
     })
     markets = pd.Series(bybit.load_markets())
