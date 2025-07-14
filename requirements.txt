@@ -5,7 +5,7 @@ annotated-types==0.6.0
 anyio==4.3.0
 asttokens==2.4.1
 attrs==23.2.0
-#ccxt==4.2.79
+ccxt==4.2.79
 certifi==2024.2.2
 cffi==1.16.0
 charset-normalizer==3.3.2
@@ -64,5 +64,5 @@ yarl==1.9.4
 streamlit==1.31.0
 pandas==2.2.2
 numpy==1.26.4
-ccxt==4.3.0
+#ccxt==4.3.0
 plotly==5.22.0
