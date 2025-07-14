@@ -36,8 +36,8 @@ st.write('# Crypto Screener #')
 @st.cache_data
 def get_bybit_ohlcv(tf='D', limit=50):
 
-    #bybit = ccxt.bybit()
-    bybit = ccxt.bybit({'enableRateLimit': True, 'rateLimit': 500})
+    bybit = ccxt.bybit()
+    #bybit = ccxt.bybit({'enableRateLimit': True, 'rateLimit': 500})
     markets = pd.Series(bybit.load_markets())
 
     tickers = []
